@@ -1,0 +1,271 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 50px;
+
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+
+/*navbar Logo and img */
+#logo{
+    margin: 2px 6px;
+
+}
+
+#logo img{
+    margin: 3px 7px;
+    height: 58px;
+
+}
+
+/*navbar LIst Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3 rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none ;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+  
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+
+#home::before{
+    content: "";
+    background:url(/img/bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.84;
+    
+}
+
+
+#home h1{
+    font-family: 'Bree Serif', serif;
+}
+
+
+#home p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Utility class */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+
+.h-primary{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: white;
+    margin: 18px;
+    color: black;
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#home button:hover{
+    background-color: red;
+}
+
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+
+.h-secondary{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    padding: 5px;
+}
+.center{
+    text-align: center;
+}
+
+
+
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('/img/bg2.jpg')  no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+   }
+   
+   #clients{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .client-item{
+       padding: 70px;
+   }
+
+   #clients img{
+    height: 140px;
+}
+
+
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('/img/contactus.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+.btns{
+    padding: 2px 272px;
+    border: 2px solid black;
+    background-color: rgb(190, 104, 6);
+    margin: 12px 20px;
+    color: black;
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.form-group button:hover{
+    
+    background-color: rgb(226, 149, 85);
+  
+}
+
+
+
+footer{
+    background: rgb(36, 34, 34);
+    color: white;
+    padding: 22px 20px;
+    font-size: 20px;
+}
